@@ -1,0 +1,5 @@
+<%= @recipe.name %>
+<% @recipe.ingredients.each do |ing| %>
+<ul><li><%= ing.name %></li></ul>
+<% end %>
+<%= link_to @recipe.user.name, @recipe.user %>
